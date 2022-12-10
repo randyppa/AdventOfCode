@@ -11,7 +11,7 @@ the same 2-knot rule as part 1.
 
 Created on Fri Dec  9 00:27:31 2022
 
-@author: rpoepa
+@author: randyppa
 """
 import numpy as np
 import time
