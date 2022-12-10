@@ -6,6 +6,9 @@ Advent Of Code, Day 9
 Part 1. Move a marker H (head of a rope) around a grid. T follows it according
 to certain rules. Determine how many positions the T visits.
 
+Part 2. The rope has 10 knots. Each knot follows the knot in front of it using
+the same 2-knot rule as part 1.
+
 Created on Fri Dec  9 00:27:31 2022
 
 @author: rpoepa
@@ -46,33 +49,10 @@ def move_tail(xh, yh, xt, yt):
         
 
 tic = time.perf_counter()
-with open('input.2022day9.txt', 'r') as f:
+with open('input/input.2022day9.txt', 'r') as f:
     moves = [line.strip().split(' ') for line in f]
 
 toc1 = time.perf_counter()
-# Process all moves to determine grid size.
-x = 0
-y = 0
-num_moves = len(moves)
-path = np.zeros((num_moves+1, 2), dtype = int)
-for k, move in enumerate(moves):
-    dist = int(move[1])
-    if move[0] == 'U':
-        y += dist
-    elif move[0] == 'D':
-        y -= dist
-    elif move[0] == 'R':
-        x += dist
-    elif move[0] == 'L':
-        x -= dist
-    path[k + 1, :] = [x, y]
-
-# Determine x and y limits
-xmin = min(path[:,0])
-xmax = max(path[:,0])
-ymin = min(path[:,1])
-ymax = max(path[:,1])
-toc2 = time.perf_counter()
 
 # Do the moves
 xh = 0
@@ -102,16 +82,13 @@ for k, move in enumerate(moves):
         xt, yt = move_tail(xh, yh, xt, yt)
         patht.add((xt, yt))
 
-toc3 = time.perf_counter()
+toc2 = time.perf_counter()
 print(f'Number of points on tail path = {len(patht)}')
 print(f'Time for load = {(toc1 - tic)*1e6} μs')
-print(f'Time to trace path = {(toc2 - toc1)*1000} ms')
-print(f'Time for Part 1 = {(toc3 - toc2)*1000} ms')
+print(f'Time for Part 1 = {(toc2 - toc1)*1000} ms')
 
 toc3 = time.perf_counter()
 
-#moves = [['R','4'], ['U','4'], ['L','3'], ['D','1'], 
-#    ['R','4'], ['D', '1'], ['L', '5'], ['R', '2']]
 # Part 2: 10 knots (head + 9 followers)
 knots = [(0,0)] * 10
 patht10 = set()
