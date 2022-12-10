@@ -1,0 +1,7 @@
+Day 9 output:
+
+Number of points on tail path = 6175
+Time for load = 2372.4499988020398 μs
+Time for Part 1 = 13.969285995699465 ms
+Number of points on tail path for 10-knot rope = 2578
+Time for part 2 = 84.454388001177 ms
