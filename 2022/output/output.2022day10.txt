@@ -1,0 +1,130 @@
+# IPython log file
+
+runfile('/Users/rpoepa/Documents/python/AdventOfCode/2022/day8.py', wdir='/Users/rpoepa/Documents/python/AdventOfCode/2022')
+runfile('/Users/rpoepa/Documents/python/AdventOfCode/2022/day8.py', wdir='/Users/rpoepa/Documents/python/AdventOfCode/2022')
+forest.nrows
+runfile('/Users/rpoepa/Documents/python/AdventOfCode/2022/day8.py', wdir='/Users/rpoepa/Documents/python/AdventOfCode/2022')
+import sys
+print sys.version
+print(sys.version)
+[0, 0]
+runfile('/Users/rpoepa/Documents/python/AdventOfCode/2022/day9.py', wdir='/Users/rpoepa/Documents/python/AdventOfCode/2022')
+path.shape()
+path.shape
+max(path[:,0])
+min(path[:,0])
+max(path[:,1])
+min(path[:,1])
+max(path)
+path[:10,:]
+runfile('/Users/rpoepa/Documents/python/AdventOfCode/2022/day9.py', wdir='/Users/rpoepa/Documents/python/AdventOfCode/2022')
+path[:10,:]
+xmax
+xmin
+ymax
+ymin
+x, y = (3,4)
+x
+y
+a = set((1,2))
+a.append((2,3))
+a.add((2,3))
+a
+a = set()
+a.add((1,2))
+a
+a.add((2,3))
+a
+a.add((1,2))
+a
+len(a)
+for _ in range(3):print(_)
+for _ in range(0):print(_)
+runfile('/Users/rpoepa/Documents/python/AdventOfCode/2022/day9.py', wdir='/Users/rpoepa/Documents/python/AdventOfCode/2022')
+[[1,2]*10]
+[[[1,2]]*10]
+[(1,2)*10]
+[([1,2)]*10]
+[[(1,2)]*10]
+[(1,2)]*10
+a=[(1,2)]*10
+type(a)
+a[0]
+for _ in range(1,5): print(_)
+runfile('/Users/rpoepa/Documents/python/AdventOfCode/2022/day9.py', wdir='/Users/rpoepa/Documents/python/AdventOfCode/2022')
+patht10[:10]
+a = list(patht10)
+a[:10]
+for _ in range(1,10): print(_)
+knots
+runfile('/Users/rpoepa/Documents/python/AdventOfCode/2022/day9.py', wdir='/Users/rpoepa/Documents/python/AdventOfCode/2022')
+runfile('/Users/rpoepa/Documents/python/AdventOfCode/2022/day9.py', wdir='/Users/rpoepa/Documents/python/AdventOfCode/2022')
+knots
+move
+moves
+runfile('/Users/rpoepa/Documents/python/AdventOfCode/2022/day9.py', wdir='/Users/rpoepa/Documents/python/AdventOfCode/2022')
+runfile('/Users/rpoepa/Documents/python/AdventOfCode/2022/day9.py', wdir='/Users/rpoepa/Documents/python/AdventOfCode/2022')
+runfile('/Users/rpoepa/Documents/python/AdventOfCode/2022/day9.py', wdir='/Users/rpoepa/Documents/python/AdventOfCode/2022')
+get_ipython().run_line_magic('pwd', '')
+get_ipython().run_line_magic('pwd', '')
+get_ipython().run_line_magic('mkdir', 'input')
+get_ipython().run_line_magic('cp', '../../AoClocal/2022/input.2022day9.txt input')
+get_ipython().run_line_magic('ls', 'input')
+runfile('/Users/rpoepa/Documents/python/AdventOfCode/2022/day9.py', wdir='/Users/rpoepa/Documents/python/AdventOfCode/2022')
+get_ipython().run_line_magic('ls', 'input')
+get_ipython().run_line_magic('mkdir', 'output')
+get_ipython().run_line_magic('ls', 'output*')
+get_ipython().run_line_magic('mv', 'output.2022day9.txt output')
+get_ipython().run_line_magic('ls', '')
+runfile('/Users/rpoepa/Documents/python/AdventOfCode/2022/day10.py', wdir='/Users/rpoepa/Documents/python/AdventOfCode/2022')
+cmd
+runfile('/Users/rpoepa/Documents/python/AdventOfCode/2022/day10.py', wdir='/Users/rpoepa/Documents/python/AdventOfCode/2022')
+cmd
+runfile('/Users/rpoepa/Documents/python/AdventOfCode/2022/day10.py', wdir='/Users/rpoepa/Documents/python/AdventOfCode/2022')
+total_value
+cycle
+runfile('/Users/rpoepa/Documents/python/AdventOfCode/2022/day10.py', wdir='/Users/rpoepa/Documents/python/AdventOfCode/2022')
+cycle
+total_value
+runfile('/Users/rpoepa/Documents/python/AdventOfCode/2022/day10.py', wdir='/Users/rpoepa/Documents/python/AdventOfCode/2022')
+runfile('/Users/rpoepa/Documents/python/AdventOfCode/2022/day10.py', wdir='/Users/rpoepa/Documents/python/AdventOfCode/2022')
+runfile('/Users/rpoepa/Documents/python/AdventOfCode/2022/day10.py', wdir='/Users/rpoepa/Documents/python/AdventOfCode/2022')
+runfile('/Users/rpoepa/Documents/python/AdventOfCode/2022/day10.py', wdir='/Users/rpoepa/Documents/python/AdventOfCode/2022')
+a=['xxx.x.x.x','sjksjdkd']
+a
+screen_ram = ['.' for _ in range(240)]
+scren_ram
+screen_ram
+''.join(screen_ram[0:39])
+range(10)
+[_ for _ in range(0,240,40)
+]
+screen_ram[39:42]
+runfile('/Users/rpoepa/Documents/python/AdventOfCode/2022/day10.py', wdir='/Users/rpoepa/Documents/python/AdventOfCode/2022')
+runfile('/Users/rpoepa/Documents/python/AdventOfCode/2022/day10.py', wdir='/Users/rpoepa/Documents/python/AdventOfCode/2022')
+runfile('/Users/rpoepa/Documents/python/AdventOfCode/2022/day10.py', wdir='/Users/rpoepa/Documents/python/AdventOfCode/2022')
+for pix in range(0, ram_size, 40):
+    print(''.join(screen_ram[pix:pix + 40]))
+    
+print(f,'Time for Part 2 = {(toc3 - toc2) * 1000} ms')
+toc3 - toc2
+runfile('/Users/rpoepa/Documents/python/AdventOfCode/2022/day10.py', wdir='/Users/rpoepa/Documents/python/AdventOfCode/2022')
+cycle
+x_reg
+cmd
+program
+debugfile('/Users/rpoepa/Documents/python/AdventOfCode/2022/day10.py', wdir='/Users/rpoepa/Documents/python/AdventOfCode/2022')
+runfile('/Users/rpoepa/Documents/python/AdventOfCode/2022/day10.py', wdir='/Users/rpoepa/Documents/python/AdventOfCode/2022')
+runfile('/Users/rpoepa/Documents/python/AdventOfCode/2022/day10.py', wdir='/Users/rpoepa/Documents/python/AdventOfCode/2022')
+runfile('/Users/rpoepa/Documents/python/AdventOfCode/2022/day10.py', wdir='/Users/rpoepa/Documents/python/AdventOfCode/2022')
+runfile('/Users/rpoepa/Documents/python/AdventOfCode/2022/day10.py', wdir='/Users/rpoepa/Documents/python/AdventOfCode/2022')
+##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######......######......######......####
+#######.......#######.......#######.....
+runfile('/Users/rpoepa/Documents/python/AdventOfCode/2022/day10.py', wdir='/Users/rpoepa/Documents/python/AdventOfCode/2022')
+get_ipython().run_line_magic('logstart', '')
+runfile('/Users/rpoepa/Documents/python/AdventOfCode/2022/day10.py', wdir='/Users/rpoepa/Documents/python/AdventOfCode/2022')
+get_ipython().run_line_magic('logoff', '')
