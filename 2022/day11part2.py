@@ -3,15 +3,12 @@
 """
 Advent of Code, Day 11, Part 2
 
-Though it's only a slight change in the rules, I opted to create a separate
-code for Part 2.'
-
 Read in a description of "monkeys", the items they hold (value is a 
 "worry level") and rules for passing the items around and modifying the
 worry levels.
 
 Part 1: Levels were divided by 3 on each inspection, and the process ran for
-20 rounds. Here worries are not divided, and the procexss runs for 10000
+20 rounds. Here worries are not divided, and the process runs for 10000
 rounds.
 
 As a result, the numbers quickly become huge and arithmetic becomes unwieldy
@@ -24,7 +21,12 @@ Created on Sun Dec 11 07:46:47 2022
 """
 import time
 
-
+# This is the guts of the Part 2 solution. Monkeys decide where to throw an
+# item based on their value modulo some key. Rather than a numerical value,
+# each item is tracked as a set of values mod all the monkeys' keys. When
+# making the decision, the monkey looks up the value for their particular key.
+# Note that this is a little redundant due to the fact that every item contains
+# its own copy of the same set of keys.
 class Item:
     def __init__(self, value, keys):
         self.modvals = {key:value % key for key in keys}
@@ -52,9 +54,8 @@ class Monkey:
         self.testval = 1    # Divisibility test
         self.iftrue = 0     # Where to throw if divisible
         self.iffalse = 0    # Where to throw if not divisible
-        self.inspect_count = 0
-        self.items = []
-        self.itemkeys = []
+        self.inspect_count = 0  # Final output is this count
+        self.items = []     # The Item objects that are moved from monkey to monkey 
     
     def addvalue(self, value):
         self.start_vals.append(value)
@@ -66,10 +67,10 @@ class Monkey:
         self.items = [Item(val, keys) for val in self.start_vals]
 
     def inspect(self, item):      # Perform inspection rules
-        self.inspect_count += 1
+        self.inspect_count += 1   # Count inspections
         
-        # Step 1: Perform the operation
-        # A rule like new = old * old is encoded as ('*', None)
+        # Perform the operation
+        # The rule new = old * old is encoded as ('*', None)
         if self.op[0] == '*':
             if self.op[1] is None:
                 item.square()
@@ -143,9 +144,6 @@ for rounds in range(10000):
         while len(monkey.items) > 0:
             item = monkey.inspect(monkey.items.pop(0))
             all_monkeys[monkey.throwto(item)].additem(item)
-    # if rounds % 500 == 49:
-    #     toc2 = time.perf_counter()
-    #     print(f'Round {rounds+1} done. Time so far = {toc2 - toc1} ')
 
 counts = []
 for monkey in all_monkeys:
@@ -160,4 +158,4 @@ for monkey in all_monkeys:
 
 print(f'Top two counts = {counts[0:2]}')
 print(f'Product = {counts[0] * counts[1]}')
-print(f'Time for Part 2 = {toc2 - toc1} ms')
+print(f'Time for Part 2 = {toc2 - toc1} s')
